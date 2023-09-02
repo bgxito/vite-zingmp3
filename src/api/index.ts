@@ -58,7 +58,7 @@ export function fetchSongInfo(id: string) {
 
 export function fetchSongList(id: string) {
   return request({
-    url: 'api/infosong?id=' + id,
+    url: 'api/detailplaylist?id=' + id,
   })
 }
 
