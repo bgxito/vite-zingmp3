@@ -28,7 +28,7 @@ request.interceptors.response.use(
 
 export function fetchPlaylist(id: string) {
   return request({
-    url: 'api/detailplaylist?id=' + id,
+    url: 'api/playlist?id=' + id,
   })
 }
 
@@ -44,9 +44,9 @@ export function fetchStreaming(id: string, isWorldWide = true) {
   }
 }
 
-export function fetchHome() {
+export function fetchHome(page = 1) {
   return request({
-    url: 'api/home',
+    url: 'api/home?page=' + page,
   })
 }
 
