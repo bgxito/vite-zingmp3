@@ -46,7 +46,7 @@ export function fetchStreaming(id: string, isWorldWide = true) {
 
 export function fetchHome(page = 1) {
   return request({
-    url: 'api/home=',
+    url: 'api/home',
   })
 }
 
