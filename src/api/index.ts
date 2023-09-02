@@ -28,43 +28,43 @@ request.interceptors.response.use(
 
 export function fetchPlaylist(id: string) {
   return request({
-    url: 'api/getDetailPlaylist?id=' + id,
+    url: 'api/detailplaylist?id=' + id,
   })
 }
 
 export function fetchStreaming(id: string, isWorldWide = true) {
   if (isWorldWide) {
     return request({
-      url: 'api/getSong?id=' + id,
+      url: 'api/song?id=' + id,
     })
   } else {
     return request({
-      url: 'api/getSong?id=' + id,
+      url: 'api/song?id=' + id,
     })
   }
 }
 
 export function fetchHome(page = 1) {
   return request({
-    url: 'api/getHome=' + page,
+    url: 'api/home=',
   })
 }
 
 export function fetchSongInfo(id: string) {
   return request({
-    url: 'api/getInfoSong?id=' + id,
+    url: 'api/infosong?id=' + id,
   })
 }
 
 export function fetchSongList(id: string) {
   return request({
-    url: 'api/getInfoSong?id=' + id,
+    url: 'api/infosong?id=' + id,
   })
 }
 
 export function fetchLyric(id: string) {
   return request({
-    url: 'api/getLyric?id=' + id,
+    url: 'api/lyric?id=' + id,
   })
 }
 
@@ -76,7 +76,7 @@ export function fetchKaraokeLyric(link: string) {
 
 export function fetchSuggestion(query: string) {
   return request({
-    url: 'api/search?query=' + query,
+    url: 'api/search?keyword=' + query,
   })
 }
 
