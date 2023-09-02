@@ -28,7 +28,7 @@ request.interceptors.response.use(
 
 export function fetchPlaylist(id: string) {
   return request({
-    url: 'api/playlist?id=' + id,
+    url: 'api/detailplaylist?id=' + id,
   })
 }
 
